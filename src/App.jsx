@@ -25,10 +25,11 @@ function App() {
           <Route path="/combat" element={<Page_combat />} />
           <Route path="/options" element={<Page_options />} />
           <Route path="/selector" element={<Page_selector />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </>
   );
 }
-
+// https://jasonwatmore.com/react-router-v6-catch-all-default-redirect-in-react
 export default App;
